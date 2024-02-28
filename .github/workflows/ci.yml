@@ -12,7 +12,9 @@ jobs:
         run: yarn install
         
       - name: view actual path
-        run: cd / | pwd |tree
+        run: cd /
+             pwd
+             tree
 
       - name: Test
         run: yarn run test
