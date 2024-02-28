@@ -12,7 +12,7 @@ jobs:
         run: yarn install
         
       - name: view actual path
-        run: locate package.json
+        run: ls -l
 
       - name: Test
         run: yarn run test
