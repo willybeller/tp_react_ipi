@@ -2,7 +2,7 @@ name: Expo CI CD
 
 on:
   push:
-    branches: [dev]
+    branches: [main]
 jobs:
   lint-and-test:
     runs-on: ubuntu-latest
