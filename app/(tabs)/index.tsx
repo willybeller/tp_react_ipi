@@ -13,11 +13,8 @@ export default function TabOneScreen() {
     <ScrollView style={styles.scrollView}>
       <View style={styles.container}>
         <Text style={styles.title}>Tab One</Text>
-        <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
         <EditScreenInfo path="app/(tabs)/index.tsx" />
-        <Text
-            lightColor="rgba(0,0,0,0.8)"
-            darkColor="rgba(255,255,255,0.8)">
+        <Text>
             <ColorTxtRed>
             Ceci est mon texte utilisant le component ColorTxtComponent.tsx
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. 

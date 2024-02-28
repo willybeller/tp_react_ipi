@@ -1,9 +1,8 @@
 import React from 'react';
-import { Button, StyleSheet } from 'react-native';
+import { StyleSheet } from 'react-native';
 
 import { ExternalLink } from './ExternalLink';
 import { MonoText } from './StyledText';
-import { ColorTxtRed } from './ColorTxtComponent';
 import { Text, View } from './Themed';
 
 import Colors from '@/constants/Colors';
@@ -26,7 +25,16 @@ export default function EditScreenInfo({ path }: { path: string }) {
           style={styles.getStartedText}>
           Change any of the text, save the file, and your app will automatically update.
         </Text>
-        
+      </View>
+
+      <View style={styles.helpContainer}>
+        <ExternalLink
+          style={styles.helpLink}
+          href="https://docs.expo.io/get-started/create-a-new-app/#opening-the-app-on-your-phonetablet">
+          <Text style={styles.helpLinkText} >
+            Tap here if your app doesn't automatically update after making changes
+          </Text>
+        </ExternalLink>
       </View>
     </View>
   );

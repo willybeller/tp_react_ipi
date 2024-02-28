@@ -2,6 +2,7 @@ import { ScrollView, StyleSheet } from 'react-native';
 
 import EditScreenInfo from '@/components/EditScreenInfo';
 import { Text, View } from '@/components/Themed';
+import ThemeSelector from '@/components/ThemeSelection';
 
 export default function TabThreeScreen() {
   return (
@@ -10,6 +11,7 @@ export default function TabThreeScreen() {
         <Text style={styles.title}>Tab Three</Text>
         {/* <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" /> */}
         <EditScreenInfo path="app/(tabs)/three.tsx" />
+        <ThemeSelector></ThemeSelector>
       </View>
     </ScrollView>
   );
