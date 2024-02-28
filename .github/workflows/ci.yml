@@ -11,10 +11,12 @@ jobs:
       - name: Install Node Modules
         run: yarn install
         
-      - name: view actual path
+      - name: cd root
         run: cd /
-             pwd
-             tree
+      - name: view actual path
+        run: pwd
+      - name: view tree
+        run: tree
 
       - name: Test
         run: yarn run test
