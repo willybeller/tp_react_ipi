@@ -12,7 +12,7 @@ jobs:
         run: yarn install
         
       - name: view tree
-        run: tree /home/runner/work/tp_react_ipi/
+        run: tree /home/runner/work
 
       - name: Test
         run: yarn run test
