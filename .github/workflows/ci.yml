@@ -1,0 +1,17 @@
+name: Expo CI CD
+
+on:
+  push:
+    branches: [dev]
+jobs:
+  lint-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Install Node Modules
+        run: yarn install
+
+      - name: Test
+        run: npm run test
