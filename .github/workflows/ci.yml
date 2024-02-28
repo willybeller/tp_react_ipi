@@ -9,7 +9,7 @@ jobs:
 
     steps:
       - name: Install Node Modules
-        run: npm install
+        run: yarn install
 
       - name: Test
-        run: npm run test
+        run: yarn run test
