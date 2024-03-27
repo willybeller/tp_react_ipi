@@ -4,15 +4,14 @@ on:
   push:
     branches: [main]
 jobs:
-  lint-and-test:
+  lint-and-tests:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Install Node Modules
-        run: npm install
-        
-      - name: view tree
-        run: tree /home/runner/work
+    - uses: actions/checkout@v2
 
-      - name: Test
-        run: npm run test
+    - name: Install Node Modules
+      run: npm install
+
+    - name: Launch Tests
+      run: npm run test
