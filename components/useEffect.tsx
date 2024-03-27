@@ -20,12 +20,12 @@ export const LoaderComponent = () => {
     }, []);
   
     return (
-      <div>
+      <View>
         {isLoading ? (
           <ColorTxtRed>Loading...</ColorTxtRed>
         ) : (
           <ColorTxtRed>Content loaded !</ColorTxtRed>
         )}
-      </div>
+      </View>
     );
   };
