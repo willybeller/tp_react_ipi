@@ -1,3 +1,4 @@
+name: Expo CD
 on:
   push:
     branches:
