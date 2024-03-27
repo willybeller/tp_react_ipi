@@ -1,5 +1,6 @@
 {
   "expo": {
+    "owner": "evvilly",
     "name": "monAppSuper",
     "slug": "monAppSuper",
     "version": "1.0.0",
@@ -41,8 +42,7 @@
         "origin": false
       },
       "eas": {
-        "projectId": "a1936959-50b1-4703-a06f-dd263b1fee08",
-        "owner": "evvilly"
+        "projectId": "a1936959-50b1-4703-a06f-dd263b1fee08"
       }
     }
   }
